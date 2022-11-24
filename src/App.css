@@ -1,6 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400&display=swap');
 
+@tailwind components;
+
 body {
   font-family: 'Poppins', sans-serif;
   scroll-behavior: smooth;
+}
+
+@layer components {
+  .btn-fill {
+    @apply bg-blue-500;
+  }
+}
+
+@layer components {
+  .dot {
+    @apply bg-blue-500 rounded-full;
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+  }
 }
