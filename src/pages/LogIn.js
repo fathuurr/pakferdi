@@ -1,5 +1,9 @@
 import React from 'react';
 
-export default function LogIn() {
-  return <div>LogIn</div>;
+const LogIn = () => {
+  return (
+    <div>LogIn</div>
+  )
 }
+
+export default LogIn
