@@ -7,17 +7,20 @@ body {
   scroll-behavior: smooth;
 }
 
-@layer components {
-  .btn-fill {
-    @apply bg-blue-500;
-  }
-}
+/* .btn-fill {
+  background-color: #466fc1;
+} */
 
 @layer components {
   .dot {
-    @apply bg-blue-500 rounded-full;
+    @apply rounded-full;
+    background-color: #466fc1;
     height: 10px;
     width: 10px;
     display: inline-block;
   }
+}
+
+.text-color {
+  color: #466fc1;
 }
