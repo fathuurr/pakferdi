@@ -11,7 +11,7 @@ function App() {
       <Router>
         <Routes>
           <Route exact path="/" element={<LandingPage />} />
-          <Route exace path="/home" element={<Home />} />
+          {/* <Route exace path="/home" element={<Home />} /> */}
           <Route exact path="/sign-in" element={<LogIn />} />
         </Routes>
       </Router>
