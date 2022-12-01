@@ -13,7 +13,7 @@ export default function Services() {
         </p>
       </div>
 
-      <div className="flex flex-wrap justify-center container mx-auto mt-5 ">
+      <div className="card-image flex flex-wrap container mx-auto mt-5 ">
         <CardImage />
       </div>
     </>

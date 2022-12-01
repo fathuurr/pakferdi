@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
+import About from '../parts/About';
 import Hero from '../parts/Hero';
 import Review from '../parts/Review';
 import Services from '../parts/Services';
@@ -11,6 +12,7 @@ function LandingPage() {
       <Hero />
       <Services />
       <Review />
+      <About />
     </>
   );
 }
