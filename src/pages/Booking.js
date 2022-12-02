@@ -34,7 +34,6 @@ const Booking = () => {
     };
 
     const containerStyle = {
-        margin: '20px',
         width: '90%',
         height: '300px',
         position: 'relative',
@@ -127,12 +126,13 @@ const Booking = () => {
                     <input placeholder="Detail Lainnya (Cth: Blok/Unit No., Patokan)"></input>
                 </div>
 
-
-                <button class="selanjutnya" style={{ background: '#466FC1', color: '#fff', borderRadius: '0.5rem', padding: '1rem 5rem', }} >
-                    Selanjutnya
-                </button>
-                
-            
+          
+                <Link to={'/payment'}>
+                    <button class="selanjutnya" style={{ background: '#466FC1', color: '#fff', borderRadius: '0.5rem', padding: '1rem 5rem', }} >
+                        Selanjutnya
+                    </button>
+                </Link>
+  
             </div>
 
             <Footer />
