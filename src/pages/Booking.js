@@ -1,13 +1,11 @@
-import React from "react"
-import {useState} from "react"
+import React, {useState} from "react"
 
 import Navbar from "../components/Navbar";
 import Footer from '../parts/Footer';
 import { Link } from 'react-router-dom';
 
-import 'react-modern-calendar-datepicker/lib/DatePicker.css';
-import { Calendar } from "react-modern-calendar-datepicker";
-
+import Calendar from 'react-calendar';
+import 'react-calendar/dist/Calendar.css';
 import { GoogleMap, LoadScript } from "@react-google-maps/api";
 
 import { ReactComponent as Male } from '../assets/male.svg';
@@ -28,11 +26,7 @@ const selectService = [
 
 
 const Booking = () => {
-    const defaultValue = {
-        year: 2022,
-        month: 12,
-        day: 9,
-    };
+    const [date, setDate] = useState(new Date());
 
     const center = {
         lat: -6.2269976,
@@ -48,7 +42,6 @@ const Booking = () => {
         transform: 'translateX(-50%)',
     };
 
-    const [selectedDay, setSelectedDay] = useState(defaultValue);
     
     return (
         <>
@@ -114,23 +107,10 @@ const Booking = () => {
                 </div>
 
                 <h1> Pilih Waktu </h1>
-                    <Calendar
-                    value={selectedDay}
-                    onChange={setSelectedDay}
-                    colorPrimary="#466FC1" 
-                    calendarClassName="custom-calendar"
-                    calendarTodayClassName="custom-today-day" 
-
-                    renderFooter={() => (
-                        <div style={{ display: 'flex', justifyContent: 'center', padding: '1rem 2rem' }}>
-                        
-                            <button style={{ background: '#466FC1', color: '#fff', borderRadius: '0.5rem', padding: '1rem 2rem', }} >
-                                Pilih Jam
-                            </button>
-                        </div>
-                      )}
-                    />
-
+                <div className='calendar-container'>
+                    <Calendar onChange={setDate} value={date} />
+                </div>
+                
                 <h1> Pilih Lokasi </h1>
                 <LoadScript googleMapsApiKey={"AIzaSyDw6Rj1YiUjCpmgZvCt9qrJladyMcUdN5g"}>
                     <GoogleMap
@@ -156,7 +136,6 @@ const Booking = () => {
             </div>
 
             <Footer />
-           
         </>
     )
 }
