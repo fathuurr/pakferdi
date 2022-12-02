@@ -3,7 +3,7 @@ import Footer from '../parts/Footer';
 import { Link } from 'react-router-dom';
 
 
-const Payment = () => {
+const ConfirmPayment = () => {
     
     
     return (
@@ -59,40 +59,16 @@ const Payment = () => {
                         </tr>
                         <tr>
                             <td>Status Pembayaran &nbsp;</td>
-                            <td> : <label> <b><u> Perlu Dibayar </u></b> </label> </td>
+                            <td> : <label> <b><u> Belum Dibayar </u></b> </label> </td>
                         </tr>
 
                     </table>
+
                 </div>
 
-                <h1> Metode Pembayaran </h1>
-                <div class="divpay">
-                    <div class="payment">
-                        <div>
-                            <img src="gopay.svg" alt="" />
-                        </div>
-                        <div>
-                            <img src="ovo.svg" alt="" />
-                        </div>
-                        <div>
-                            <img src="dana.svg" alt="" />
-                        </div>
-                        <div>
-                            <img src="bank.svg" alt="" />
-                        </div>
-                        <div>
-                            <img src="visa.svg" alt="" />
-                        </div>
-                        <div>
-                            <img src="master.svg" alt="" />
-                        </div>
-                    </div>
-                </div>
-             
-
-                <Link to={'/confirm-payment'}>
+                <Link to={'/detail-booking'}>
                     <button class="selanjutnya" style={{ background: '#466FC1', color: '#fff', borderRadius: '0.5rem', padding: '1rem 5rem', }} >
-                        Pesan Sekarang
+                        Saya Sudah Bayar
                     </button>
                 </Link>
             
@@ -104,4 +80,4 @@ const Payment = () => {
 }
 
 
-export default Payment 
+export default ConfirmPayment 

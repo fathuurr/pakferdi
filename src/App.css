@@ -297,6 +297,15 @@ a {
   margin: 20px;
 }
 
+.checkpayment {
+  position: absolute;
+  width: 200px;
+  height: auto;
+  opacity: 0.3;
+  margin: 50px;
+  right: 0px;
+}
+
 @media only screen and (max-width: 600px) {
   .pilihService .service {
     width: 100%;
@@ -313,6 +322,10 @@ a {
   .divpay .payment img{
     width: 100px;
     margin: 10px;
+  }
+
+  .checkpayment {
+    display: none;
   }
 
 }

@@ -3,7 +3,7 @@ import Footer from '../parts/Footer';
 import { Link } from 'react-router-dom';
 
 
-const Payment = () => {
+const DetailBooking = () => {
     
     
     return (
@@ -17,8 +17,12 @@ const Payment = () => {
                     </svg>
                 </Link>
 
-                <h1> Konfirmasi Pembayaran </h1>
+                <h1> Detail Booking </h1>
                 <div class="divpay">
+
+                <img class="checkpayment" src="check.svg" alt="" />
+
+
                     <table class="tableConfirm">
                         <tr>
                             <td>Nama &nbsp;</td>
@@ -59,40 +63,15 @@ const Payment = () => {
                         </tr>
                         <tr>
                             <td>Status Pembayaran &nbsp;</td>
-                            <td> : <label> <b><u> Perlu Dibayar </u></b> </label> </td>
+                            <td> : <label> <b><u> Berhasil </u></b> </label> </td>
                         </tr>
 
                     </table>
                 </div>
 
-                <h1> Metode Pembayaran </h1>
-                <div class="divpay">
-                    <div class="payment">
-                        <div>
-                            <img src="gopay.svg" alt="" />
-                        </div>
-                        <div>
-                            <img src="ovo.svg" alt="" />
-                        </div>
-                        <div>
-                            <img src="dana.svg" alt="" />
-                        </div>
-                        <div>
-                            <img src="bank.svg" alt="" />
-                        </div>
-                        <div>
-                            <img src="visa.svg" alt="" />
-                        </div>
-                        <div>
-                            <img src="master.svg" alt="" />
-                        </div>
-                    </div>
-                </div>
-             
-
-                <Link to={'/confirm-payment'}>
+                <Link to={'/'}>
                     <button class="selanjutnya" style={{ background: '#466FC1', color: '#fff', borderRadius: '0.5rem', padding: '1rem 5rem', }} >
-                        Pesan Sekarang
+                        Kembali ke Beranda
                     </button>
                 </Link>
             
@@ -104,4 +83,4 @@ const Payment = () => {
 }
 
 
-export default Payment 
+export default DetailBooking 
