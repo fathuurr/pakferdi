@@ -44,19 +44,6 @@ const DetailBooking = () => {
                             <td> : Jakarta</td>
                         </tr>
                         <tr>
-                            <td>Rincian Pembayaran &nbsp;</td>
-                            <td> : <label> <i>Pijat Aromaterapi - Rp. 120.000</i> </label> </td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td> : <label> <i>Platform fee - Rp. 2.000</i> </label> </td>
-                        </tr>    
-
-                        <tr>
-                            <td>Total Pembayaran &nbsp;</td>
-                            <td> : <label> <b>Rp. 122.000</b> </label> </td>
-                        </tr>
-                        <tr>
                             <td>Status Pembayaran &nbsp;</td>
                             <td> : <label> <b><u> Berhasil </u></b> </label> </td>
                         </tr>
