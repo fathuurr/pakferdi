@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Hero() {
   return (
@@ -25,9 +26,12 @@ export default function Hero() {
           </p>
 
           <div className="inline-block items-center mt-5 mx-auto lg:mx-0 lg:flex justify-center lg:space-x-8 md:space-x-2 sm:space-x-3 space-x-0">
-            <button className="bg-[#466FC1] inline-flex font-semibold text-white text-base py-4 px-6 rounded-xl mb-4 lg:mb-0 md:mb-0 focus:outline-none hover:shadow-lg">
-              Pesan Sekarang
-            </button>
+            <Link to={'/booking'}>
+              <button className="bg-[#466FC1] inline-flex font-semibold text-white text-base py-4 px-6 rounded-xl mb-4 lg:mb-0 md:mb-0 focus:outline-none hover:shadow-lg">
+                Pesan Sekarang
+              </button>
+            </Link>
+
           </div>
         </div>
         <div className="w-full md:w-1/2 text-center justify-center flex pr-0">

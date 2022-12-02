@@ -93,3 +93,113 @@ a {
   color: #ffffff;
   background-color: #252525;
 }
+
+.m-booking {
+  width: 70%;
+  height: auto;
+  margin-bottom: 100px;
+  margin-top: 50px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%)
+}
+
+.m-booking .selanjutnya {
+  margin-top: 30px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%)
+}
+
+.Calendar {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.select {
+  margin-top: 20px;
+  padding: 10px;
+  width: 90%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+
+  box-shadow: 5px 6px 20px #0000001a;
+
+}
+
+.iconBack {
+  margin-top: 20px;
+}
+
+.m-booking h1{
+  margin-top: 40px;
+  color: #466FC1;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.m-booking h2{
+  margin-top: 20px;
+  color: #466FC1;
+  font-size: 15px;
+}
+
+.pilihService {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pilihService .service {
+  text-align: center;
+  width: 40%;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 5px 6px 20px #0000001a;
+  border-radius: 5px;
+  margin: 10px;
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pilihService .service svg{
+  margin-right: 10px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.pilihService .service:hover {
+  background-color: #466FC1;
+  color: white;
+}
+
+.alamatLengkap {
+  width: 90%;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 5px 6px 20px #0000001a;
+  border-radius: 5px;
+  width: 90%;
+  height: auto;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.alamatLengkap input {
+  width: 100%;
+  border: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .pilihService .service {
+    width: 90%;
+  }
+
+}
