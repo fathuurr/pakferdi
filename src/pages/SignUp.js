@@ -6,7 +6,7 @@ import { ReactComponent as IconBack } from '../assets/icon-back.svg';
 import Input from '../components/Forms/Input';
 import Footer from '../parts/Footer';
 
-const LogIn = () => {
+export default function SignUp() {
   return (
     <>
       <div className="flex mx-10 my-10">
@@ -26,32 +26,32 @@ const LogIn = () => {
           </div>
           <div class="flex w-full h-full px-8 width-right sm:px-16 py-32 lg:mx-0 mx-auto items-left justify-left bg-medium-white">
             <div class="w-full sm:w-7/12 md:w-8/12 lg:w-9/12 xl:w-7/12 mx-auto lg:mx-0">
-              <h3 class="text-3xl font-semibold mb-3">Masuk ke Pijatin</h3>
+              <h3 class="text-3xl font-semibold mb-3">Daftar ke Pijatin</h3>
               <form class="mt-6" action="#" method="POST">
                 <div class="mb-7">
+                  <Input type={'text'} placeholder={'Email Address'} />
+                </div>
+
+                <div class="mt-4">
                   <Input type={'text'} placeholder={'Username'} />
                 </div>
+
                 <div class="mt-4">
                   <Input type={'password'} placeholder={'Password'} />
                 </div>
 
-                <div class="mt-5">
-                  <Link to={'/'} class=" text-sm italic">
-                    Lupa password ?
-                  </Link>
-                </div>
                 <button
                   type="submit"
                   class="bg-[#466FC1] block w-full px-4 py-3 mt-6 font-medium text-md text-white transition duration-500 ease-in-out transform rounded-md shadow-lg hover:shadow-2xl">
-                  Masuk
+                  Daftar
                 </button>
               </form>
               <p class="mt-8 text-center text-sm text-foot">
-                Belum punya akun?
+                Sudah punya akun?
                 <Link
-                  to={'/sign-up'}
+                  to={'/sign-in'}
                   className="ml-2 font-medium hover:underline ">
-                  Daftar Sekarang
+                  Masuk
                 </Link>
               </p>
             </div>
@@ -62,6 +62,4 @@ const LogIn = () => {
       <Footer />
     </>
   );
-};
-
-export default LogIn;
+}
