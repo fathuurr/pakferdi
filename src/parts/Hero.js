@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default function Hero() {
   return (
-    <div className="container mx-auto" >
+    <div className="container mx-auto">
       <div className="mx-auto flex pt-12 pb-16 lg:pb-20 lg:px-24 md:px-16 sm:px-8 px-8 lg:flex-row flex-col">
         <div className="lg:flex-grow lg:w-1/2 flex flex-col lg:items-start lg:text-left mb-3 md:mb-12 lg:mb-0 items-center text-center">
           <p className="small-text mb-8 leading-relaxed font-semibold text-sm">
