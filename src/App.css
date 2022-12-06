@@ -16,99 +16,532 @@ body {
     display: inline-block;
   }
 
+  #testimonials {
+    @apply flex justify-between items-center w-full;
+  }
+
+  a {
+    @apply no-underline;
+  }
+
+  .testimonial-box-container {
+    @apply flex justify-center items-center flex-wrap w-full;
+  }
+
+  .testimonial-box {
+    @apply bg-white p-5 m-4 cursor-pointer;
+    width: 500px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .profile {
+    @apply flex items-center;
+  }
+
+  .name-user {
+    @apply flex flex-col;
+  }
+
+  .name-user strong {
+    color: #3d3d3d;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+  }
+
+  .name-user span {
+    color: #979797;
+    font-size: 0.8rem;
+  }
+  .reviews {
+    color: #f9d71c;
+  }
+
+  .box-top {
+    @apply flex justify-between items-center mb-5;
+  }
+
+  .client-comment p {
+    font-size: 0.9rem;
+    color: #4b4b4b;
+  }
+
+  .testimonial-box:hover {
+    transform: translateY(-10px);
+    transition: all ease 0.3s;
+  }
+
+  ::selection {
+    color: #ffffff;
+    background-color: #252525;
+  }
+
+  .m-booking {
+    @apply h-auto mb-24 mt-12 relative left-2/4;
+    width: 70%;
+    transform: translateX(-50%);
+  }
+
+  .m-booking .selanjutnya {
+    @apply mt-7 relative left-2/4;
+  }
+
+  .select {
+    @apply mt-5 w-full relative left-2/4;
+    padding: 10px;
+    transform: translateX(-50%);
+    z-index: 1;
+    box-shadow: 5px 6px 20px #0000001a;
+  }
+
+  .iconBack {
+    margin-top: 20px;
+  }
+
+  .m-booking h1 {
+    margin-top: 40px;
+    color: #466fc1;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .m-booking h2 {
+    margin-top: 20px;
+    color: #466fc1;
+    font-size: 15px;
+  }
+
+  .pilihService {
+    @apply flex flex-wrap justify-center;
+  }
+
+  .pilihService .service {
+    @apply flex flex-wrap justify-center rounded-md cursor-pointer p-5 bg-white;
+    text-align: center;
+    width: 40%;
+    box-shadow: 5px 6px 20px #0000001a;
+    border-radius: 5px;
+    margin: 10px;
+  }
+
+  .pilihService .service svg {
+    margin-right: 10px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .pilihService .service:hover {
+    background-color: #466fc1;
+    color: white;
+  }
+
+  .alamatLengkap {
+    width: 90%;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 5px 6px 20px #0000001a;
+    border-radius: 5px;
+    width: 90%;
+    height: auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .alamatLengkap input {
+    width: 100%;
+    border: none;
+  }
+
+  .divpay {
+    margin-top: 20px;
+    padding: 30px;
+    box-shadow: 5px 6px 20px #0000001a;
+  }
+
+  .tableConfirm {
+    line-height: 40px;
+  }
+
+  .tableConfirm label {
+    color: #466fc1;
+  }
+
+  .divpay .payment {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .divpay .payment div {
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+  }
+
+  .divpay .payment div:hover {
+    box-shadow: 5px 6px 20px #0000001a;
+  }
+
+  .divpay .payment img {
+    height: auto;
+    width: 100px;
+    margin: 20px;
+  }
+
+  .checkpayment {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    opacity: 0.3;
+    margin: 30px;
+    right: 0px;
+  }
+
+  .content-3-5 input::placeholder {
+    color: black;
+  }
+
+  .content-3-5 .input .icon-toggle path {
+    transition: 0.3;
+    fill: #2ec49c;
+    transition: 0.3s;
+  }
+
+  .content-3-5 .centered {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .content-3-5 .width-left {
+    width: 0%;
+  }
+
+  .content-3-5 .width-right {
+    width: 100%;
+  }
+
+  .content-3-5 .forgot-password {
+    color: #cacbce;
+    transition: 0.3s;
+  }
+
+  .content-3-5 .forgot-password:hover {
+    color: #2a3240;
+  }
+
+  .feature {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+
+  .feature__circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 4px;
+  }
+
+  .feature__icon {
+    color: #737373;
+  }
+
+  .feature__label {
+    white-space: nowrap;
+  }
+
+  .listing {
+    width: 20%;
+    min-width: 250px;
+    max-width: 400px;
+    position: relative;
+    margin: 20px;
+    cursor: pointer;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .listing::before {
+    content: '';
+    display: block;
+    padding-bottom: calc((5 / 4) * 100%);
+  }
+
+  .listing__content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .listing__image-container {
+    width: 100%;
+    height: 65%;
+    overflow: hidden;
+  }
+
+  .listing__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .listing__details {
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 0px 25px;
+    position: relative;
+  }
+
+  .listing__type {
+    position: absolute;
+    font-size: 0.8rem;
+    right: 10px;
+    top: 10px;
+    background-color: rgb(223, 247, 255);
+    padding: 5px 10px;
+    border-radius: 15px;
+  }
+
+  .listing__row {
+    @apply flex items-center;
+    margin: 6px 0px;
+  }
+
+  .listing__title {
+    @apply text-lg text-[#466FC1];
+  }
+
+  .listing__address {
+    color: #737373;
+  }
+
+  .modal {
+    min-height: 600px;
+    border-radius: 20px;
+    position: relative;
+    background-color: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    display: flex;
+  }
+
+  .modal__image {
+    object-fit: cover;
+    border-radius: 20px;
+  }
+
+  .modal__info {
+    background-color: white;
+    display: flex;
+  }
+
+  .modal__row {
+    margin: 20px 0px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+  }
+
+  .modal__description-wrapper {
+    margin: 20px 0px;
+    text-align: left;
+    overflow-y: scroll;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .modal__title {
+    @apply text-3xl text-[#466FC1];
+  }
+
+  .modal__service {
+    @apply text-xl;
+  }
+
+  .modal__description {
+    @apply text-lg text-gray-400 font-light;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .modal__close-wrapper {
+    all: unset;
+    position: absolute;
+    cursor: pointer;
+  }
+
+  .modal__close-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 100;
+    display: flex;
+  }
+
+  .properties {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  ::-webkit-scrollbar {
+    width: 5px;
+    background-color: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #cacaca;
+    border-radius: 5px;
+  }
+
+  /* Responsive Design */
+
+  @media only screen {
+    .modal {
+      @apply h-auto flex-col justify-between items-center p-4;
+      width: 90%;
+    }
+
+    .modal__image {
+      @apply w-full;
+    }
+
+    .modal__info {
+      @apply flex-col items-start p-5 h-full;
+      width: calc(100%);
+    }
+
+    .modal__close-wrapper {
+      right: -20px;
+      top: -30px;
+    }
+
+    .modal__close-icon {
+      width: 35px;
+      height: 35px;
+      color: #cacaca;
+    }
+
+    .overlay {
+      @apply overflow-y-auto justify-center;
+      align-items: flex-start;
+      padding: 40px 0px;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .pilihService .service {
+      @apply w-full;
+    }
+
+    .m-booking {
+      width: 90%;
+    }
+
+    .tableConfirm {
+      line-height: 30px;
+    }
+
+    .divpay .payment img {
+      @apply w-full;
+      margin: 10px;
+    }
+
+    .checkpayment {
+      display: none;
+    }
+  }
+
+  @media only screen and (min-width: 1281px) {
+    .modal {
+      @apply justify-between flex-row items-center p-7;
+      width: 80%;
+      height: 80%;
+      max-width: 1800px;
+    }
+
+    .modal__image {
+      width: calc(70% - 10px);
+      height: 100%;
+    }
+
+    .modal__info {
+      @apply h-full p-5 flex-col items-start;
+      width: calc(30% - 10px);
+    }
+
+    .modal__close-wrapper {
+      right: 10px;
+      top: 10px;
+    }
+
+    .modal__close-icon {
+      color: #737373;
+    }
+
+    .overlay {
+      @apply justify-center items-center;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .content-3-5 .width-left {
+      width: 50%;
+    }
+
+    .content-3-5 .width-right {
+      width: 50%;
+    }
+  }
+
   @media (max-width: 1024px) {
     .input-user-profile {
       @apply flex-col;
     }
   }
-}
 
-.card-image {
-  width: 65%;
+  @media (max-width: 700px) {
+    .card-image {
+      @apply mx-auto;
+      width: 75%;
+    }
+  }
 }
 
 * {
   margin: 0px;
   padding: 0px;
-  font-family: poppins;
+  font-family: Poppins;
   box-sizing: border-box;
 }
-a {
-  text-decoration: none;
-}
-#testimonials {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  /* flex-direction: column; */
-  width: 100%;
-}
 
-.testimonial-box-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 100%;
-}
-.testimonial-box {
-  width: 500px;
-  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
-  background-color: #ffffff;
-  padding: 20px;
-  margin: 15px;
-  cursor: pointer;
-}
-
-.profile {
-  display: flex;
-  align-items: center;
-}
-.name-user {
-  display: flex;
-  flex-direction: column;
-}
-.name-user strong {
-  color: #3d3d3d;
-  font-size: 1.1rem;
-  letter-spacing: 0.5px;
-}
-.name-user span {
-  color: #979797;
-  font-size: 0.8rem;
-}
-.reviews {
-  color: #f9d71c;
-}
-.box-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-}
-.client-comment p {
-  font-size: 0.9rem;
-  color: #4b4b4b;
-}
-.testimonial-box:hover {
-  transform: translateY(-10px);
-  transition: all ease 0.3s;
-}
-
-::selection {
-  color: #ffffff;
-  background-color: #252525;
-}
-
-.m-booking {
-  width: 70%;
-  height: auto;
-  margin-bottom: 100px;
-  margin-top: 50px;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-}
+/* React Calendar Styling */
 
 .react-calendar {
   width: 400px;
@@ -125,6 +558,7 @@ a {
   border: none;
   padding: 20px;
 }
+
 .react-calendar__navigation button {
   color: #6f48eb;
   min-width: 44px;
@@ -132,10 +566,12 @@ a {
   font-size: 16px;
   margin-top: 8px;
 }
+
 .react-calendar__navigation button:enabled:hover,
 .react-calendar__navigation button:enabled:focus {
   background-color: #f8f8fa;
 }
+
 .react-calendar__navigation button[disabled] {
   background-color: #f0f0f0;
 }
@@ -176,202 +612,4 @@ abbr[title] {
 .react-calendar__tile--active:enabled:focus {
   background: #6f48eb;
   color: white;
-}
-
-.m-booking .selanjutnya {
-  margin-top: 30px;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.select {
-  margin-top: 20px;
-  padding: 10px;
-  width: 100%;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1;
-
-  box-shadow: 5px 6px 20px #0000001a;
-}
-
-.iconBack {
-  margin-top: 20px;
-}
-
-.m-booking h1 {
-  margin-top: 40px;
-  color: #466fc1;
-  font-size: 20px;
-  font-weight: 500;
-}
-
-.m-booking h2 {
-  margin-top: 20px;
-  color: #466fc1;
-  font-size: 15px;
-}
-
-.pilihService {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.pilihService .service {
-  text-align: center;
-  width: 40%;
-  background-color: white;
-  padding: 20px;
-  box-shadow: 5px 6px 20px #0000001a;
-  border-radius: 5px;
-  margin: 10px;
-  cursor: pointer;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.pilihService .service svg {
-  margin-right: 10px;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.pilihService .service:hover {
-  background-color: #466fc1;
-  color: white;
-}
-
-.alamatLengkap {
-  width: 90%;
-  background-color: white;
-  padding: 20px;
-  box-shadow: 5px 6px 20px #0000001a;
-  border-radius: 5px;
-  width: 90%;
-  height: auto;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.alamatLengkap input {
-  width: 100%;
-  border: none;
-}
-
-.divpay {
-  margin-top: 20px;
-  padding: 30px;
-  box-shadow: 5px 6px 20px #0000001a;
-}
-
-.tableConfirm {
-  line-height: 40px;
-}
-
-.tableConfirm label {
-  color: #466fc1;
-}
-
-.divpay .payment {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.divpay .payment div {
-  border: 1px solid #d9d9d9;
-  border-radius: 5px;
-  margin: 10px;
-  cursor: pointer;
-}
-
-.divpay .payment div:hover {
-  box-shadow: 5px 6px 20px #0000001a;
-}
-
-.divpay .payment img {
-  height: auto;
-  width: 100px;
-  margin: 20px;
-}
-
-.checkpayment {
-  position: absolute;
-  width: 200px;
-  height: auto;
-  opacity: 0.3;
-  margin: 30px;
-  right: 0px;
-}
-
-@media only screen and (max-width: 600px) {
-  .pilihService .service {
-    width: 100%;
-  }
-
-  .m-booking {
-    width: 90%;
-  }
-
-  .tableConfirm {
-    line-height: 30px;
-  }
-
-  .divpay .payment img {
-    width: 100px;
-    margin: 10px;
-  }
-
-  .checkpayment {
-    display: none;
-  }
-}
-
-.content-3-5 input::placeholder {
-  color: black;
-}
-
-.content-3-5 .input .icon-toggle path {
-  transition: 0.3;
-  fill: #2ec49c;
-  transition: 0.3s;
-}
-
-.content-3-5 .centered {
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.content-3-5 .width-left {
-  width: 0%;
-}
-
-.content-3-5 .width-right {
-  width: 100%;
-}
-
-.content-3-5 .forgot-password {
-  color: #cacbce;
-  transition: 0.3s;
-}
-
-.content-3-5 .forgot-password:hover {
-  color: #2a3240;
-}
-
-@media (min-width: 1024px) {
-  .content-3-5 .width-left {
-    width: 50%;
-  }
-
-  .content-3-5 .width-right {
-    width: 50%;
-  }
 }

@@ -1,5 +1,7 @@
 import React from 'react';
-import CardImage from '../components/CardImage';
+import Card from '../components/Card';
+
+import { data } from '../constant/data';
 
 export default function Services() {
   return (
@@ -13,8 +15,10 @@ export default function Services() {
         </p>
       </div>
 
-      <div className="flex flex-wrap container mx-auto  mt-5 ">
-        <CardImage />
+      <div className="flex flex-wrap container mx-auto mt-10 card-image">
+        {data.map((item) => {
+          return <Card data={item} key={item.id} />;
+        })}
       </div>
     </>
   );
