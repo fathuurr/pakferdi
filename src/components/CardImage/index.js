@@ -1,7 +1,7 @@
 import React from 'react';
 import { data } from '../Image';
 
-export default function CardImage() {
+export default function CardImage({ className }) {
   return (
     <>
       {data.map((item, key) => {
