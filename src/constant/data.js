@@ -44,6 +44,8 @@ export const data = [
     image: Image5,
     description:
       'Pijat olahraga merupakan pijat yang biasa dilakukan sebelum, saat, dan usai berolahraga. Pijat khusus olahraga ini sangat dibutuhkan untuk orang-orang yang memiliki aktivitas fisik tinggi. Pijat Olahraga bermanfaat untuk memperlancar sirkulasi darah, mengobati cedera otot, mengatasi stres, meningkatkan fleksibilitas tubuh dan mengurangi rasa cemas',
+    service:
+      'sudah termasuk krim pijat, batu basal, alat pemanas batu, dan sprei',
   },
   {
     id: 6,
