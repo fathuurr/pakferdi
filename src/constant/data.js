@@ -19,7 +19,7 @@ export const data = [
     title: 'Pijat Batu Panas',
     image: Image2,
     description:
-      'Pijat batu panas adalah teknik pijat yang memanfaatkan batu basal datar yang telah direndam dalam air panas, lalu ditempatkan di area tubuh tertentu. Pijat batu panas dapat meredakan rasa nyeri akibat kondisi medis seperti fibromyalgia, mengurangi resiko gejala kanker, meningkatkan daya tahan tubuh, mengurangi otot pegal linu, mengurangi stress dan kecemasan dan membuat tidur nyenyak.',
+      'Menggunakan teknik pijat dengan batu basal datar hangat yang ditempatkan di area tubuh tertentu. Pijat Batu Panas dapat meredakan rasa nyeri otot, meningkatkan daya tahan tubuh, membuat tidur semakin nyenyak.',
     service: 'Handuk, Cream Massege, Minyak Pijat, Slow cooker, Batu dan Sprei',
   },
   {
@@ -27,7 +27,7 @@ export const data = [
     title: 'Pijat Thai',
     image: Image3,
     description:
-      'Thai massage atau Thai yoga merupakan bentuk terapi pijat tradisional Thailand. Thai massage dilakukan dengan berbaring di atas matras, berpakaian lengkap, dan mengharuskan Anda ikut bergerak aktif. Bermanfaat untuk mengembalikan energi, meredakan kecemasan, meredakan nyeri sendi dan otot, mengurangi sakit punggung, dan meredakan sakit kepala',
+      'Menggunakan teknik yoga dan pijat ala Thailand yang dilakukan dengan berbaring di atas matras dan mengikuti gerakan pemijat. Pijat Thai dapat mengembalikan energi, mengurangi kecemasan, meredakan nyeri sendi dan otot, sakit punggung dan sakit kepala',
     service: 'Handuk, Cream Massege, Bantal Kecil dan Sprei',
   },
   {
@@ -35,7 +35,7 @@ export const data = [
     title: 'Pijat Refleksi',
     image: Image4,
     description:
-      'pijat refleksi lebih fokus pada titik saraf tertentu pada tubuh, terutama pada kaki dan tangan. Teknik pijat ini membantu menenangkan sistem saraf pusat, meningkatkan relaksasi, dan mempercepat pemulihan penyakit, Melancarkan peredaran darah, mengurangi nyeri haid, dan meredakan sakit kepala',
+      'Pijat ini fokus pada titik saraf tertentu pada tubuh, terutama pada kaki dan tangan. Dapat membantu menenangkan sistem saraf pusat, merelaksasi tubuh, Melancarkan peredaran darah, mengurangi nyeri haid, dan meredakan sakit kepala',
     service: 'Handuk, Cream Massege, Minyak Esensial dan Sprei',
   },
   {
@@ -43,7 +43,7 @@ export const data = [
     title: 'Pijat Olahraga',
     image: Image5,
     description:
-      'Pijat olahraga merupakan pijat yang biasa dilakukan sebelum, saat, dan usai berolahraga. Pijat khusus olahraga ini sangat dibutuhkan untuk orang-orang yang memiliki aktivitas fisik tinggi. Pijat Olahraga bermanfaat untuk memperlancar sirkulasi darah, mengobati cedera otot, mengatasi stres, meningkatkan fleksibilitas tubuh dan mengurangi rasa cemas',
+      'Menggunakan teknik pijat khusus untuk para olahragawan dengan metode recovery yang dapat melancarkan sirkulasi darah, mengobati cedera dan tegang otot, dan meningkatkan fleksibilitas tubuh.',
     service:
       'sudah termasuk krim pijat, batu basal, alat pemanas batu, dan sprei',
   },
@@ -52,7 +52,7 @@ export const data = [
     title: 'Pijat Lulur',
     image: Image6,
     description:
-      'Pijat lulur tubuh adalah perawatan tubuh yang populer. Manfaatnya agar mengelupas dan melembabkan kulit Anda, membuatnya halus dan lembut. Lulur tubuh dilakukan dengan bahan abrasif — biasanya garam laut atau gula — dicampur dengan sejenis minyak pijat dan minyak esensial seperti aromatik.',
+      'Menggabungkan teknik pijat tradisional dengan perawatan kulit untuk mengangkat sel kulit mati, mencerahkan kulit, melembutkan kulit dan merelaksasikan tubuh.',
     service: 'Handuk, Cream Massege, Scrub, dan Sprei',
   },
 ];
