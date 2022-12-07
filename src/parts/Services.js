@@ -1,7 +1,7 @@
-import React from 'react';
-import Card from '../components/Card';
+import React from "react";
+import Card from "../components/Card";
 
-import { data } from '../constant/data';
+import { data } from "../constant/data";
 
 export default function Services() {
   return (
@@ -17,7 +17,9 @@ export default function Services() {
 
       <div
         id="services"
-        className="flex flex-row flex-wrap justify-center mx-4 mt-10">
+        style={{ margin: "0 auto" }}
+        className="w-1/2 flex flex-row flex-wrap justify-center mt-10"
+      >
         {data.map((item) => {
           return <Card data={item} key={item.id} />;
         })}
