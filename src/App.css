@@ -525,13 +525,6 @@ body {
       @apply flex-col;
     }
   }
-
-  @media (max-width: 700px) {
-    .card-image {
-      @apply mx-auto;
-      width: 75%;
-    }
-  }
 }
 
 * {
