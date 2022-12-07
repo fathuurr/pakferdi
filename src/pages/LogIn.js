@@ -9,11 +9,11 @@ import Footer from '../parts/Footer';
 const LogIn = () => {
   return (
     <>
-      <div className="flex mx-10 my-10">
+      <div className="flex justify-around items-center mx-10 my-10">
         <Link to={'/'}>
           <IconBack />
         </Link>
-        <img src="/pijatin.png" alt="icon" className="sm:ml-10 ml-20" />
+        <img src="/pijatin.png" alt="icon" style={{ margin: '0 auto' }} />
       </div>
       <div class="content-3-5">
         <div class="flex flex-col items-center h-full lg:flex-row">
