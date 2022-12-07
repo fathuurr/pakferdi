@@ -99,17 +99,10 @@ const ConfirmPayment = () => {
           </table>
         </div>
 
-        <Link to={'/detail-booking'}>
-          <button
-            class="selanjutnya"
-            style={{
-              background: '#466FC1',
-              color: '#fff',
-              borderRadius: '0.5rem',
-              padding: '1rem 5rem',
-            }}>
-            Saya Sudah Bayar
-          </button>
+        <Link
+          className="flex justify-center mx-auto mt-10 w-full bg-[#466FC1] text-white rounded-lg py-4 max-sm:w-1/2 text-sm"
+          to={'/detail-booking'}>
+          Saya Sudah Bayar
         </Link>
       </div>
 

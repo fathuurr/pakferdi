@@ -3,11 +3,12 @@ import { GoogleMap, LoadScript } from '@react-google-maps/api';
 
 export default function About() {
   const containerStyle = {
-    width: '90%',
+    width: '75%',
     height: '300px',
     position: 'relative',
     left: '50%',
     transform: 'translateX(-50%)',
+    borderRadius: '20px',
   };
 
   const center = {
@@ -21,7 +22,7 @@ export default function About() {
         About us
       </p>
       <p className="text-center mt-5 text-[20px] ">Pijatin Profile</p>
-      <p className="mt-5 text-center">
+      <p className="mt-5 text-center mx-3">
         merupakan sebuah platform yang melayani jasa pijat yang dapat di pesan
         secara online <br /> atau daring dan melayani anda kapanpun dan
         dimanapun.
