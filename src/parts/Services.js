@@ -15,7 +15,9 @@ export default function Services() {
         </p>
       </div>
 
-      <div className="flex flex-row flex-wrap justify-center mx-4 mt-10">
+      <div
+        id="services"
+        className="flex flex-row flex-wrap justify-center mx-4 mt-10">
         {data.map((item) => {
           return <Card data={item} key={item.id} />;
         })}

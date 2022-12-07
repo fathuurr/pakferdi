@@ -17,7 +17,7 @@ export default function About() {
   };
 
   return (
-    <section className="mt-10">
+    <section id="about-us" className="mt-10">
       <p className="text-[#466FC1] font-bold text-[15px] text-center ">
         About us
       </p>

@@ -55,16 +55,16 @@ function Navbar() {
               }`}>
               <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
                 <li className="hover:text-blue-500">
-                  <Link to="/">Home</Link>
+                  <a href="/">Home</a>
                 </li>
                 <li className="hover:text-blue-500">
-                  <Link to="/">Services</Link>
+                  <a href="#services">Services</a>
                 </li>
                 <li className="hover:text-blue-500">
-                  <Link to="/">Review</Link>
+                  <a href="#review">Review</a>
                 </li>
                 <li className="hover:text-blue-500">
-                  <Link to="/">About Us</Link>
+                  <a href="#about-us">About Us</a>
                 </li>
               </ul>
 

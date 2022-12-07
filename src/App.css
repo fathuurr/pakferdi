@@ -2,7 +2,10 @@
 
 @tailwind components;
 
-body {
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
   scroll-behavior: smooth;
 }
@@ -525,13 +528,6 @@ body {
       @apply flex-col;
     }
   }
-}
-
-* {
-  margin: 0px;
-  padding: 0px;
-  font-family: Poppins;
-  box-sizing: border-box;
 }
 
 /* React Calendar Styling */
