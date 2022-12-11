@@ -21,8 +21,8 @@ export default function Hero() {
           </h1>
 
           <p className="font-light text-gray-400">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt utlab.
+            Layanan pijat profesional ke rumah terbaik dan terpercaya
+            se-Indonesia
           </p>
 
           <div className="inline-block items-center mt-5 mx-auto lg:mx-0 lg:flex justify-center lg:space-x-8 md:space-x-2 sm:space-x-3 space-x-0">

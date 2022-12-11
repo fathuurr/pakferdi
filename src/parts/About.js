@@ -23,9 +23,9 @@ export default function About() {
       </p>
       <p className="text-center mt-5 text-[20px] ">Pijatin Profile</p>
       <p className="mt-5 text-center mx-3">
-        merupakan sebuah platform yang melayani jasa pijat yang dapat di pesan
-        secara online <br /> atau daring dan melayani anda kapanpun dan
-        dimanapun.
+        Pijatin Menyediakan jasa pijat panggilan ke rumah atau tempat tinggal
+        Anda baik di daerah <br /> Jakarta Timur, Pusat, Barat, Selatan, maupun
+        Utara..
       </p>
 
       <div className="mt-10 mb-20">
