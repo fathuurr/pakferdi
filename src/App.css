@@ -472,7 +472,7 @@
     }
 
     .divpay .payment img {
-      @apply w-full;
+      width: 150px;
       margin: 10px;
     }
 
