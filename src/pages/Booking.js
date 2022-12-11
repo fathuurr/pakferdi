@@ -36,6 +36,7 @@ const Booking = () => {
     position: 'relative',
     left: '50%',
     transform: 'translateX(-50%)',
+    borderRadius: '20px',
   };
 
   return (

@@ -31,7 +31,6 @@ export default function Hero() {
                 Pesan Sekarang
               </button>
             </Link>
-
           </div>
         </div>
         <div className="w-full md:w-1/2 text-center justify-center flex pr-0">
