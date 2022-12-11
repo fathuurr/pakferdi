@@ -10,6 +10,7 @@ import Footer from "../parts/Footer";
 
 function LandingPage() {
   const [loading, setLoading] = useState(false);
+
   useEffect(() => {
     setLoading(true);
     setTimeout(() => {

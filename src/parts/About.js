@@ -1,14 +1,20 @@
-import React from 'react';
-import { GoogleMap, LoadScript } from '@react-google-maps/api';
+import React from "react";
+import { GoogleMap, LoadScript, useJsApiLoader } from "@react-google-maps/api";
 
 export default function About() {
+  const { isLoaded } = useJsApiLoader({
+    id: "google-map-script",
+    googleMapsApiKey: "AIzaSyDw6Rj1YiUjCpmgZvCt9qrJladyMcUdN5g",
+    libraries: ["geometry", "drawing"],
+  });
+
   const containerStyle = {
-    width: '75%',
-    height: '300px',
-    position: 'relative',
-    left: '50%',
-    transform: 'translateX(-50%)',
-    borderRadius: '20px',
+    width: "75%",
+    height: "300px",
+    position: "relative",
+    left: "50%",
+    transform: "translateX(-50%)",
+    borderRadius: "20px",
   };
 
   const center = {
@@ -29,14 +35,13 @@ export default function About() {
       </p>
 
       <div className="mt-10 mb-20">
-        <LoadScript
-          googleMapsApiKey={'AIzaSyDw6Rj1YiUjCpmgZvCt9qrJladyMcUdN5g'}>
+        {isLoaded && (
           <GoogleMap
             mapContainerStyle={containerStyle}
             center={center}
             zoom={12}
           />
-        </LoadScript>
+        )}
       </div>
     </section>
   );
