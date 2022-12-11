@@ -17,8 +17,8 @@ export default function Services() {
 
       <div
         id="services"
-        // style={{ margin: '0 auto' }}
-        className="flex flex-row flex-wrap justify-center mt-10">
+        style={{ maxWidth: 896 }}
+        className="container mx-auto flex flex-row flex-wrap justify-center mt-10">
         {data.map((item) => {
           return <Card data={item} key={item.id} />;
         })}

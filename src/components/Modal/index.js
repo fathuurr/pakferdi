@@ -35,7 +35,7 @@ const Modal = ({ data, close }) => {
       onClick={(e) => e.stopPropagation()}>
       <motion.img
         className="modal__image"
-        alt="real estate mansion"
+        alt="gambar"
         src={image}
         variants={imageVariants}></motion.img>
       <motion.div className="modal__info" variants={modalInfoVariants}>
