@@ -8,11 +8,7 @@ const Listing = ({ data, open }) => {
     <motion.div className="listing" onClick={open} whileHover={{ scale: 1.1 }}>
       <div className="listing__content">
         <div className="listing__image-container">
-          <img
-            className="listing__image"
-            alt="real estate mansion"
-            src={image}
-          />
+          <img className="listing__image" alt="gambar" src={image} />
         </div>
         <div className="listing__details">
           <div className="listing__row">
