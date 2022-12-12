@@ -1,16 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-import { ReactComponent as ImageLoading } from '../../assets/imageloading.svg';
-
 export default function LoadingCard() {
   return (
     <motion.div className="listing animate-pulse" whileHover={{ scale: 1.1 }}>
       <div className="listing__content">
         <div className="listing__image-container">
-          <div className="listing__image flex justify-center items-center w-full h-48 bg-slate-400">
-            <ImageLoading />
-          </div>
+          <div className="listing__image flex justify-center items-center w-full h-48 bg-slate-400"></div>
         </div>
         <div className="listing__details">
           <div className="listing__row">
