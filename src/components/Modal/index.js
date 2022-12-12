@@ -50,6 +50,13 @@ const Modal = ({ data, close }) => {
           variants={modalRowVariants}>
           <p className="modal__description">{description}</p>
         </motion.div>
+        <motion.div className="modal__row" variants={modalRowVariants}>
+          <a
+            className="bg-[#466FC1] w-full px-4 py-2 font-thin text-md text-white transition duration-500 ease-in-out transform rounded-lg shadow-lg hover:shadow-2xl"
+            href="/booking">
+            Pesan Sekarang
+          </a>
+        </motion.div>
         <motion.button
           className="modal__close-wrapper"
           whileHover={{ scale: 1.2 }}
