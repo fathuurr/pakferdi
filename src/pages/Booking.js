@@ -88,7 +88,7 @@ const Booking = () => {
             </div>
 
             <h1> Pilih Gender Anda </h1>
-            <div className="pilihService">
+            <div className="pilihService mt-10">
               <div className="service">
                 <Male />
                 <p>Pria</p>
@@ -100,7 +100,7 @@ const Booking = () => {
             </div>
 
             <h1> Pilih Durasi </h1>
-            <div className="pilihService">
+            <div className="pilihService mt-10">
               <div className="service">
                 <p>
                   30 Menit - <i>Rp. 60.000</i>{' '}
@@ -124,7 +124,7 @@ const Booking = () => {
             </div>
 
             <h1> Pilih Gender Terapis </h1>
-            <div className="pilihService">
+            <div className="pilihService mt-10">
               <div className="service">
                 <Male />
                 <p>Pria</p>
@@ -135,15 +135,21 @@ const Booking = () => {
               </div>
             </div>
 
-            <h1> Pilih Waktu </h1>
-            <div className="calendar-container">
+            <h1> Pilih Tanggal & Waktu </h1>
+            <div className="calendar-container mt-10">
               <Calendar onChange={setDate} value={date} />
+              <input
+                className="flex mx-auto mt-10 w-full focus-within:outline-none text-base font-light"
+                type="time"
+                value={'00:00'}
+              />
             </div>
 
             <h1> Pilih Lokasi </h1>
 
             {isLoaded && (
               <GoogleMap
+                mapContainerClassName="mt-8"
                 mapContainerStyle={containerStyle}
                 center={center}
                 zoom={12}
@@ -151,7 +157,7 @@ const Booking = () => {
             )}
 
             <h2> Alamat Lengkap :</h2>
-            <div className="alamatLengkap">
+            <div className="alamatLengkap mt-10">
               <input placeholder="Provinsi, Kota, Kecamatan, Kode Pos"></input>
               <input placeholder="Nama Jalan, Gedung, No. Rumah"></input>
               <input placeholder="Detail Lainnya (Cth: Blok/Unit No., Patokan)"></input>
