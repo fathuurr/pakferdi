@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
-import ReactLoading from "react-loading";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from 'react';
+import ReactLoading from 'react-loading';
+import { Link } from 'react-router-dom';
 
-import Navbar from "../components/Navbar";
-import Footer from "../parts/Footer";
+import Navbar from '../components/Navbar';
+import Footer from '../parts/Footer';
 
 const DetailBooking = () => {
   const [loading, setLoading] = useState(false);
@@ -21,19 +21,19 @@ const DetailBooking = () => {
       {loading ? (
         <ReactLoading
           className="absolute top-1/2 left-1/2"
-          type={"bubbles"}
-          color={"blue"}
+          type={'spin'}
+          color={'blue'}
           height={64}
           width={64}
         />
       ) : (
         <>
-          <div class="m-booking">
+          <div className="m-booking">
             <h1> Detail Booking </h1>
-            <div class="divpay">
-              <img class="checkpayment" src="check.svg" alt="" />
+            <div className="divpay">
+              <img className="checkpayment" src="check.svg" alt="" />
 
-              <table class="tableConfirm">
+              <table className="tableConfirm">
                 <tr>
                   <td>Nama &nbsp;</td>
                   <td> : Jainudin</td>
@@ -74,8 +74,7 @@ const DetailBooking = () => {
 
             <Link
               className="flex justify-center mx-auto mt-10 w-full bg-[#466FC1] text-white rounded-lg py-4 max-sm:w-1/2 text-sm"
-              to={"/"}
-            >
+              to={'/'}>
               Kembali ke Beranda
             </Link>
           </div>

@@ -1,9 +1,19 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Card from '../components/Card';
+import LoadingCard from '../components/Loading/LoadingCard';
 
 import { data } from '../constant/data';
 
 export default function Services() {
+  const [Loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 2300);
+  }, []);
+
   return (
     <>
       <div className="text-center">
@@ -20,7 +30,7 @@ export default function Services() {
         style={{ maxWidth: 896 }}
         className="container mx-auto flex flex-row flex-wrap justify-center mt-10">
         {data.map((item) => {
-          return <Card data={item} key={item.id} />;
+          return Loading ? <LoadingCard /> : <Card data={item} key={item.id} />;
         })}
       </div>
     </>

@@ -1,26 +1,26 @@
-import React, { useState, useEffect } from "react";
-import ReactLoading from "react-loading";
+import React, { useState, useEffect } from 'react';
+import ReactLoading from 'react-loading';
 
-import Navbar from "../components/Navbar";
-import Footer from "../parts/Footer";
-import { Link } from "react-router-dom";
+import Navbar from '../components/Navbar';
+import Footer from '../parts/Footer';
+import { Link } from 'react-router-dom';
 
-import Calendar from "react-calendar";
-import "react-calendar/dist/Calendar.css";
-import { GoogleMap, useJsApiLoader } from "@react-google-maps/api";
+import Calendar from 'react-calendar';
+import 'react-calendar/dist/Calendar.css';
+import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
 
-import { ReactComponent as Male } from "../assets/male.svg";
-import { ReactComponent as Female } from "../assets/female.svg";
-import { ReactComponent as IconBack } from "../assets/icon-back.svg";
+import { ReactComponent as Male } from '../assets/male.svg';
+import { ReactComponent as Female } from '../assets/female.svg';
+import { ReactComponent as IconBack } from '../assets/icon-back.svg';
 
-import Select from "react-select";
+import Select from 'react-select';
 const selectService = [
-  { value: "Pijat Aroma Terapi", label: "Pijat Aroma Terapi" },
-  { value: "Pijat Batu Panas", label: "Pijat Batu Panas" },
-  { value: "Pijat Thai", label: "Pijat Thai" },
-  { value: "Pijat Refleksi", label: "Pijat Refleksi" },
-  { value: "Pijat Olahraga", label: "Pijat Olahraga" },
-  { value: "Pijat Lulur", label: "Pijat Lulur" },
+  { value: 'Pijat Aroma Terapi', label: 'Pijat Aroma Terapi' },
+  { value: 'Pijat Batu Panas', label: 'Pijat Batu Panas' },
+  { value: 'Pijat Thai', label: 'Pijat Thai' },
+  { value: 'Pijat Refleksi', label: 'Pijat Refleksi' },
+  { value: 'Pijat Olahraga', label: 'Pijat Olahraga' },
+  { value: 'Pijat Lulur', label: 'Pijat Lulur' },
 ];
 
 const Booking = () => {
@@ -28,9 +28,9 @@ const Booking = () => {
   const [loading, setLoading] = useState(false);
 
   const { isLoaded } = useJsApiLoader({
-    id: "google-map-script",
-    googleMapsApiKey: "AIzaSyDw6Rj1YiUjCpmgZvCt9qrJladyMcUdN5g",
-    libraries: ["geometry", "drawing"],
+    id: 'google-map-script',
+    googleMapsApiKey: 'AIzaSyDw6Rj1YiUjCpmgZvCt9qrJladyMcUdN5g',
+    libraries: ['geometry', 'drawing'],
   });
 
   const center = {
@@ -39,12 +39,12 @@ const Booking = () => {
   };
 
   const containerStyle = {
-    width: "75%",
-    height: "300px",
-    position: "relative",
-    left: "50%",
-    transform: "translateX(-50%)",
-    borderRadius: "20px",
+    width: '75%',
+    height: '300px',
+    position: 'relative',
+    left: '50%',
+    transform: 'translateX(-50%)',
+    borderRadius: '20px',
   };
 
   useEffect(() => {
@@ -61,25 +61,25 @@ const Booking = () => {
       {loading ? (
         <ReactLoading
           className="absolute top-1/2 left-1/2"
-          type={"bubbles"}
-          color={"blue"}
+          type={'spin'}
+          color={'blue'}
           height={64}
           width={64}
         />
       ) : (
         <>
-          <div class="m-booking">
-            <Link to="/" class="iconBack">
+          <div className="m-booking">
+            <Link to="/" className="iconBack">
               <IconBack />
             </Link>
 
             <h1> Pilih Jenis Pijat </h1>
-            <div class="select">
+            <div className="select">
               <Select
                 styles={{
                   control: (baseStyles, state) => ({
                     ...baseStyles,
-                    borderColor: "white",
+                    borderColor: 'white',
                   }),
                 }}
                 placeholder="Pilih Jenis Pijat"
@@ -88,48 +88,48 @@ const Booking = () => {
             </div>
 
             <h1> Pilih Gender Anda </h1>
-            <div class="pilihService">
-              <div class="service">
+            <div className="pilihService">
+              <div className="service">
                 <Male />
                 <p>Pria</p>
               </div>
-              <div class="service">
+              <div className="service">
                 <Female />
                 <p>Perempuan</p>
               </div>
             </div>
 
             <h1> Pilih Durasi </h1>
-            <div class="pilihService">
-              <div class="service">
+            <div className="pilihService">
+              <div className="service">
                 <p>
-                  30 Menit - <i>Rp. 60.000</i>{" "}
+                  30 Menit - <i>Rp. 60.000</i>{' '}
                 </p>
               </div>
-              <div class="service">
+              <div className="service">
                 <p>
-                  60 Menit - <i>Rp. 120.000</i>{" "}
+                  60 Menit - <i>Rp. 120.000</i>{' '}
                 </p>
               </div>
-              <div class="service">
+              <div className="service">
                 <p>
-                  90 Menit - <i>Rp. 180.000</i>{" "}
+                  90 Menit - <i>Rp. 180.000</i>{' '}
                 </p>
               </div>
-              <div class="service">
+              <div className="service">
                 <p>
-                  120 Menit - <i>Rp. 240.000</i>{" "}
+                  120 Menit - <i>Rp. 240.000</i>{' '}
                 </p>
               </div>
             </div>
 
             <h1> Pilih Gender Terapis </h1>
-            <div class="pilihService">
-              <div class="service">
+            <div className="pilihService">
+              <div className="service">
                 <Male />
                 <p>Pria</p>
               </div>
-              <div class="service">
+              <div className="service">
                 <Female />
                 <p>Perempuan</p>
               </div>
@@ -151,7 +151,7 @@ const Booking = () => {
             )}
 
             <h2> Alamat Lengkap :</h2>
-            <div class="alamatLengkap">
+            <div className="alamatLengkap">
               <input placeholder="Provinsi, Kota, Kecamatan, Kode Pos"></input>
               <input placeholder="Nama Jalan, Gedung, No. Rumah"></input>
               <input placeholder="Detail Lainnya (Cth: Blok/Unit No., Patokan)"></input>
@@ -159,8 +159,7 @@ const Booking = () => {
 
             <Link
               className="flex justify-center mx-auto mt-10 w-full bg-[#466FC1] text-white rounded-lg py-4 max-sm:w-1/2 text-sm"
-              to={"/payment"}
-            >
+              to={'/payment'}>
               Selanjutnya
             </Link>
           </div>

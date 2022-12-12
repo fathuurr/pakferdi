@@ -1,23 +1,16 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import LoadingReview from '../components/Loading/LoadingReview';
+import { review } from '../constant/data';
 
 export default function Review() {
-  const data = [
-    {
-      text: 'Sangat mudah untuk memesan jasa ini serta  para massager melayani dan melakukan pijat secara profesional.',
-      name: 'Siti Jaenab',
-      status: 'Karyawati Swasta',
-    },
-    {
-      text: 'Sangat puas dengan pelayanan yang diberikan, yang pijat pun sangat ramah dan baik.',
-      name: 'Awaludin',
-      status: 'Pekerja Keras',
-    },
-    {
-      text: 'Baru pertama kali pesan jasa pijat ke rumah secara online, saya sangat puas dengan pelayanan nya. Pasti menggunakan jasa ini lagi!',
-      name: 'Jubaedah',
-      status: 'Ibu Rumah Tangga',
-    },
-  ];
+  const [Loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 2500);
+  }, []);
 
   return (
     <section id="review" className="container mx-auto mt-10">
@@ -31,8 +24,10 @@ export default function Review() {
       </div>
 
       <section id="testimonials" className="overflow-auto">
-        {data.map((item) => {
-          return (
+        {review.map((item) => {
+          return Loading ? (
+            <LoadingReview />
+          ) : (
             <div class="testimonial-box-container">
               <div class="testimonial-box">
                 <div class="box-top">

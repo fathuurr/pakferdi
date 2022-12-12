@@ -9,6 +9,7 @@ import DetailBooking from './pages/DetailBooking';
 import UserProfile from './pages/UserProfile';
 
 import './App.css';
+import LoadingCard from './components/Loading/LoadingCard';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/confirm-payment" element={<ConfirmPayment />} />
           <Route path="/detail-booking" element={<DetailBooking />} />
           <Route path="/user-profile" element={<UserProfile />} />
+          <Route path="/loading" element={<LoadingCard />} />
         </Routes>
       </Router>
     </>

@@ -56,3 +56,21 @@ export const data = [
     service: 'Handuk, Cream Massege, Scrub, dan Sprei',
   },
 ];
+
+export const review = [
+  {
+    text: 'Sangat mudah untuk memesan jasa ini serta  para massager melayani dan melakukan pijat secara profesional.',
+    name: 'Siti Jaenab',
+    status: 'Karyawati Swasta',
+  },
+  {
+    text: 'Sangat puas dengan pelayanan yang diberikan, yang pijat pun sangat ramah dan baik.',
+    name: 'Awaludin',
+    status: 'Pekerja Keras',
+  },
+  {
+    text: 'Baru pertama kali pesan jasa pijat ke rumah secara online, saya sangat puas dengan pelayanan nya. Pasti menggunakan jasa ini lagi!',
+    name: 'Jubaedah',
+    status: 'Ibu Rumah Tangga',
+  },
+];

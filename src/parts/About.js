@@ -1,20 +1,20 @@
-import React from "react";
-import { GoogleMap, useJsApiLoader } from "@react-google-maps/api";
+import React from 'react';
+import { GoogleMap, useJsApiLoader } from '@react-google-maps/api';
 
 export default function About() {
   const { isLoaded } = useJsApiLoader({
-    id: "google-map-script",
-    googleMapsApiKey: "AIzaSyDw6Rj1YiUjCpmgZvCt9qrJladyMcUdN5g",
-    libraries: ["geometry", "drawing"],
+    id: 'google-map-script',
+    googleMapsApiKey: 'AIzaSyDw6Rj1YiUjCpmgZvCt9qrJladyMcUdN5g',
+    libraries: ['geometry', 'drawing'],
   });
 
   const containerStyle = {
-    width: "75%",
-    height: "300px",
-    position: "relative",
-    left: "50%",
-    transform: "translateX(-50%)",
-    borderRadius: "20px",
+    width: '75%',
+    height: '300px',
+    position: 'relative',
+    left: '50%',
+    transform: 'translateX(-50%)',
+    borderRadius: '20px',
   };
 
   const center = {
