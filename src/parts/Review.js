@@ -28,18 +28,18 @@ export default function Review() {
           return Loading ? (
             <LoadingReview />
           ) : (
-            <div class="testimonial-box-container">
-              <div class="testimonial-box">
-                <div class="box-top">
-                  <div class="profile">
-                    <div class="rounded-full w-10 h-10 bg-gray-600"></div>
-                    <div class="name-user pl-3 ">
+            <div className="testimonial-box-container">
+              <div className="testimonial-box">
+                <div className="box-top">
+                  <div className="profile">
+                    <div className="rounded-full w-10 h-10 bg-gray-600"></div>
+                    <div className="name-user pl-3 ">
                       <p className="leading-[30px] font-medium">{item.name}</p>
                       <span> {item.status} </span>
                     </div>
                   </div>
                 </div>
-                <div class="client-comment">
+                <div className="client-comment">
                   <p>{item.text}</p>
                 </div>
               </div>
