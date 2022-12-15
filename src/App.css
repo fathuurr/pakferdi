@@ -487,6 +487,12 @@
     }
   }
 
+  @media only screen and (min-width: 600px) {
+    .m-booking {
+      width: 90%;
+    }
+  }
+
   @media only screen and (min-width: 1281px) {
     .modal {
       @apply justify-between flex-row items-center p-7;

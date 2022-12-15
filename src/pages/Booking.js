@@ -103,22 +103,22 @@ const Booking = () => {
             <div className="pilihService mt-10">
               <div className="service">
                 <p>
-                  30 Menit - <i>Rp. 60.000</i>{' '}
+                  40 Menit - <i>Rp. 130.000</i>
                 </p>
               </div>
               <div className="service">
                 <p>
-                  60 Menit - <i>Rp. 120.000</i>{' '}
+                  60 Menit - <i>Rp. 160.000</i>
                 </p>
               </div>
               <div className="service">
                 <p>
-                  90 Menit - <i>Rp. 180.000</i>{' '}
+                  90 Menit - <i>Rp. 200.000</i>
                 </p>
               </div>
               <div className="service">
                 <p>
-                  120 Menit - <i>Rp. 240.000</i>{' '}
+                  120 Menit - <i>Rp. 300.000</i>
                 </p>
               </div>
             </div>

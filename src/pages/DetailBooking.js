@@ -28,7 +28,7 @@ const DetailBooking = () => {
         />
       ) : (
         <>
-          <div className="m-booking">
+          <div className="m-booking max-md:text-xs">
             <h1> Detail Booking </h1>
             <div className="divpay">
               <img className="checkpayment" src="check.svg" alt="" />
@@ -39,25 +39,29 @@ const DetailBooking = () => {
                   <td> : Jainudin</td>
                 </tr>
                 <tr>
-                  <td>Jenis Layanan Pijat &nbsp;</td>
+                  <td>Layanan</td>
                   <td> : Pijat Aromaterapi</td>
                 </tr>
                 <tr>
                   <td>Durasi &nbsp;</td>
                   <td> : 60 Menit</td>
                 </tr>
-                <tr>
-                  <td>Gender Terapis &nbsp;</td>
-                  <td> : Pria</td>
-                </tr>
+
                 <tr>
                   <td>Waktu &nbsp;</td>
                   <td> : 12:00 pm</td>
                 </tr>
+
                 <tr>
-                  <td>Lokasi &nbsp;</td>
-                  <td> : Jakarta</td>
+                  <td>Lokasi </td>
+                  <td>: Jl. Kencana, No. 55, Jakarta Timur, Dki Jakarta</td>
                 </tr>
+
+                <tr>
+                  <td>Gender Terapis</td>
+                  <td> : Pria</td>
+                </tr>
+
                 <tr>
                   <td>Status Pembayaran &nbsp;</td>
                   <td>
@@ -66,6 +70,40 @@ const DetailBooking = () => {
                       <b>
                         <u> Berhasil </u>
                       </b>
+                    </label>
+                  </td>
+                </tr>
+
+                <tr className="mt-5">
+                  <td>
+                    <hr />
+                  </td>
+                  <td>
+                    <hr />
+                  </td>
+                  <td style={{ width: '66%' }}>
+                    <hr />
+                  </td>
+                </tr>
+
+                <tr>
+                  <td className="text-[#466FC1] max-md:w-full ">
+                    Nama Terapis
+                  </td>
+                  <td>: Afifudin</td>
+                </tr>
+
+                <tr>
+                  <td className="text-[#466FC1]">Gender Terapis</td>
+                  <td>: Pria</td>
+                </tr>
+
+                <tr>
+                  <td className="text-[#466FC1]">No. Telepon</td>
+                  <td>
+                    :
+                    <label>
+                      <b> (+62) 896-3456-634 </b>
                     </label>
                   </td>
                 </tr>

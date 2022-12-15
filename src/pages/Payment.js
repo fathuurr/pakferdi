@@ -52,70 +52,84 @@ const Payment = () => {
                   <td> : Jainudin</td>
                 </tr>
                 <tr>
-                  <td>Jenis Layanan Pijat &nbsp;</td>
+                  <td>Layanan</td>
                   <td> : Pijat Aromaterapi</td>
                 </tr>
-                <tr>
-                  <td>Durasi &nbsp;</td>
-                  <td> : 60 Menit</td>
-                </tr>
-                <tr>
-                  <td>Gender Terapis &nbsp;</td>
-                  <td> : Pria</td>
-                </tr>
+
                 <tr>
                   <td>Waktu &nbsp;</td>
                   <td> : 12:00 pm</td>
                 </tr>
                 <tr>
-                  <td>Lokasi &nbsp;</td>
-                  <td> : Jakarta</td>
+                  <td>Durasi &nbsp;</td>
+                  <td> : 40 Menit</td>
                 </tr>
                 <tr>
-                  <td>Rincian Pembayaran &nbsp;</td>
+                  <td>Lokasi &nbsp;</td>
+                  <td>: Jl. Kencana, No. 55, Jakarta Timur, Dki Jakarta</td>
+                </tr>
+                <tr>
+                  <td>Gender Terapis &nbsp;</td>
+                  <td> : Pria</td>
+                </tr>
+
+                <tr>
                   <td>
-                    {' '}
-                    :{' '}
-                    <label>
-                      {' '}
-                      <i>Pijat Aromaterapi - Rp. 120.000</i>{' '}
-                    </label>{' '}
+                    <hr />
+                  </td>
+                  <td>
+                    <hr />
+                  </td>
+                  <td style={{ width: '55%' }}>
+                    <hr />
                   </td>
                 </tr>
+
+                <p className="font-semibold text-base mt-5 mb-7">
+                  Rincian Harga
+                </p>
+
                 <tr>
-                  <td></td>
+                  <td className="text-[#466FC1] max-md:w-full ">
+                    Pijat Aromaterapi
+                  </td>
                   <td>
-                    {' '}
-                    :{' '}
+                    :
                     <label>
-                      {' '}
-                      <i>Platform fee - Rp. 2.000</i>{' '}
-                    </label>{' '}
+                      <b> Rp. 120.000</b>
+                    </label>
                   </td>
                 </tr>
 
                 <tr>
-                  <td>Total Pembayaran &nbsp;</td>
+                  <td className="text-[#466FC1]">Biaya Pelayanan</td>
                   <td>
-                    {' '}
-                    :{' '}
+                    :
                     <label>
-                      {' '}
-                      <b>Rp. 122.000</b>{' '}
-                    </label>{' '}
+                      <b> Rp. 2.500</b>
+                    </label>
                   </td>
                 </tr>
+
                 <tr>
-                  <td>Status Pembayaran &nbsp;</td>
+                  <td className="text-[#466FC1]">Biaya Perlindungan</td>
                   <td>
-                    {' '}
-                    :{' '}
+                    :
                     <label>
-                      {' '}
+                      <b> Rp. 5.000</b>
+                    </label>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td className="text-[#466FC1]">Total Pembayaran</td>
+                  <td>
+                    :
+                    <label>
                       <b>
-                        <u> Perlu Dibayar </u>
-                      </b>{' '}
-                    </label>{' '}
+                        <b> Rp. 137.000 </b>
+                      </b>
+                    </label>
                   </td>
                 </tr>
               </table>
