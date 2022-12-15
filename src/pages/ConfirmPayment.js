@@ -29,7 +29,7 @@ const ConfirmPayment = () => {
         />
       ) : (
         <>
-          <div className="m-booking">
+          <div className="container mx-auto px-8 mt-10">
             <Link to={'/booking'} className="iconBack">
               <svg
                 width="15"
@@ -44,7 +44,7 @@ const ConfirmPayment = () => {
               </svg>
             </Link>
 
-            <h1> Konfirmasi Pembayaran </h1>
+            <h1 className="mt-10"> Konfirmasi Pembayaran </h1>
             <div className="divpay">
               <table className="tableConfirm">
                 <tr>
@@ -100,7 +100,7 @@ const ConfirmPayment = () => {
 
                 <tr>
                   <td className="uppercase text-[#466FC1] max-md:w-full ">
-                    Total Pembayaran &nbsp;
+                    Total Pembayaran
                   </td>
                   <td>
                     :
@@ -111,16 +111,14 @@ const ConfirmPayment = () => {
                 </tr>
 
                 <tr>
-                  <td className="text-[#466FC1] ">
-                    No Virtual &nbsp; Account{' '}
-                  </td>
+                  <td className="text-[#466FC1] ">No Virtual &nbsp; Account</td>
                   <td>
                     : <b className="text-[#466FC1]"> 1171236285123455</b>
                   </td>
                 </tr>
 
                 <tr>
-                  <td className="text-[#466FC1]">Status Pembayaran &nbsp;</td>
+                  <td className="text-[#466FC1]">Status Pembayaran</td>
                   <td>
                     :
                     <label>

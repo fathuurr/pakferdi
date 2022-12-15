@@ -68,12 +68,12 @@ const Booking = () => {
         />
       ) : (
         <>
-          <div className="m-booking">
+          <div className="container mx-auto px-8 mt-10">
             <Link to="/" className="iconBack">
               <IconBack />
             </Link>
 
-            <h1> Pilih Jenis Pijat </h1>
+            <h1 className="mt-10"> Pilih Jenis Pijat </h1>
             <div className="select">
               <Select
                 styles={{
@@ -87,7 +87,7 @@ const Booking = () => {
               />
             </div>
 
-            <h1> Pilih Gender Anda </h1>
+            <h1 className="mt-10"> Pilih Gender Anda </h1>
             <div className="pilihService mt-10">
               <div className="service">
                 <Male />
@@ -99,7 +99,7 @@ const Booking = () => {
               </div>
             </div>
 
-            <h1> Pilih Durasi </h1>
+            <h1 className="mt-10"> Pilih Durasi </h1>
             <div className="pilihService mt-10">
               <div className="service">
                 <p>
@@ -123,7 +123,7 @@ const Booking = () => {
               </div>
             </div>
 
-            <h1> Pilih Gender Terapis </h1>
+            <h1 className="mt-10"> Pilih Gender Terapis </h1>
             <div className="pilihService mt-10">
               <div className="service">
                 <Male />
@@ -135,7 +135,7 @@ const Booking = () => {
               </div>
             </div>
 
-            <h1> Pilih Tanggal & Waktu </h1>
+            <h1 className="mt-10"> Pilih Tanggal & Waktu </h1>
             <div className="calendar-container mt-10">
               <Calendar onChange={setDate} value={date} />
               <input
@@ -156,7 +156,7 @@ const Booking = () => {
               />
             )}
 
-            <h2> Alamat Lengkap :</h2>
+            <h2 className="mt-10"> Alamat Lengkap :</h2>
             <div className="alamatLengkap mt-10">
               <input placeholder="Provinsi, Kota, Kecamatan, Kode Pos"></input>
               <input placeholder="Nama Jalan, Gedung, No. Rumah"></input>

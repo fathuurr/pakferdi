@@ -28,14 +28,14 @@ const DetailBooking = () => {
         />
       ) : (
         <>
-          <div className="m-booking max-md:text-xs">
+          <div className="container mx-auto px-8 mt-10 max-md:text-xs">
             <h1> Detail Booking </h1>
             <div className="divpay">
               <img className="checkpayment" src="check.svg" alt="" />
 
               <table className="tableConfirm">
                 <tr>
-                  <td>Nama &nbsp;</td>
+                  <td>Nama </td>
                   <td> : Jainudin</td>
                 </tr>
                 <tr>
@@ -43,12 +43,12 @@ const DetailBooking = () => {
                   <td> : Pijat Aromaterapi</td>
                 </tr>
                 <tr>
-                  <td>Durasi &nbsp;</td>
+                  <td>Durasi </td>
                   <td> : 60 Menit</td>
                 </tr>
 
                 <tr>
-                  <td>Waktu &nbsp;</td>
+                  <td>Waktu </td>
                   <td> : 12:00 pm</td>
                 </tr>
 
@@ -63,7 +63,7 @@ const DetailBooking = () => {
                 </tr>
 
                 <tr>
-                  <td>Status Pembayaran &nbsp;</td>
+                  <td>Status Pembayaran </td>
                   <td>
                     :
                     <label>

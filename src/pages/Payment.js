@@ -29,7 +29,7 @@ const Payment = () => {
         />
       ) : (
         <>
-          <div className="m-booking">
+          <div className="container mx-auto px-8 mt-10">
             <Link to={'/booking'} className="iconBack">
               <svg
                 width="15"
@@ -44,7 +44,7 @@ const Payment = () => {
               </svg>
             </Link>
 
-            <h1> Konfirmasi Pembayaran </h1>
+            <h1 className="mt-10"> Konfirmasi Pembayaran </h1>
             <div className="divpay">
               <table className="tableConfirm">
                 <tr>
