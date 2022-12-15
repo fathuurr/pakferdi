@@ -40,11 +40,12 @@ const LogIn = () => {
                     Lupa password ?
                   </Link>
                 </div>
-                <button
-                  type="submit"
+                <a
+                  href="/user-profile"
+                  // type="submit"
                   class="bg-[#466FC1] block w-full px-4 py-3 mt-6 font-medium text-md text-white transition duration-500 ease-in-out transform rounded-md shadow-lg hover:shadow-2xl">
                   Masuk
-                </button>
+                </a>
               </form>
               <p class="mt-8 text-center text-sm text-foot">
                 Belum punya akun?
