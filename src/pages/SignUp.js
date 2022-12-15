@@ -40,11 +40,12 @@ export default function SignUp() {
                   <Input type={'password'} placeholder={'Password'} />
                 </div>
 
-                <button
-                  type="submit"
-                  class="bg-[#466FC1] block w-full px-4 py-3 mt-6 font-medium text-md text-white transition duration-500 ease-in-out transform rounded-md shadow-lg hover:shadow-2xl">
+                <a
+                  href="/user-profile"
+                  // type="submit"
+                  class="bg-[#466FC1] text-center block w-full px-4 py-3 mt-6 font-medium text-md text-white transition duration-500 ease-in-out transform rounded-md shadow-lg hover:shadow-2xl">
                   Daftar
-                </button>
+                </a>
               </form>
               <p class="mt-8 text-center text-sm text-foot">
                 Sudah punya akun?

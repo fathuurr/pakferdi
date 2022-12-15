@@ -43,7 +43,7 @@ const LogIn = () => {
                 <a
                   href="/user-profile"
                   // type="submit"
-                  class="bg-[#466FC1] block w-full px-4 py-3 mt-6 font-medium text-md text-white transition duration-500 ease-in-out transform rounded-md shadow-lg hover:shadow-2xl">
+                  class="bg-[#466FC1] text-center block w-full px-4 py-3 mt-6 font-medium text-md text-white transition duration-500 ease-in-out transform rounded-md shadow-lg hover:shadow-2xl">
                   Masuk
                 </a>
               </form>
